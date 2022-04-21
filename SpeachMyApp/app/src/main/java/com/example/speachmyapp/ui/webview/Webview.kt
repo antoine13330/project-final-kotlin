@@ -40,18 +40,11 @@ class Webview : Fragment() {
         // -- set event listeners --
         binding.searchButton.setOnClickListener{
             val urlToSearch = binding.inputSearchUrl.text.toString()
-            // regex found on https://ihateregex.io/expr/url/ and modified to match even non https/http/www url
-            val regex = "(https?:\\/\\/(www\\.)?)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()!@:%_\\+.~#?&\\/\\/=]*)S".toRegex();
-            if ( URLUtil.isValidUrl(urlToSearch)) {
+
+            if (!URLUtil.isValidUrl(urlToSearch))
+                Snackbar.make(it, "Please enter a valid url (start with '(http|https)://' )", Snackbar.LENGTH_LONG).setAction("Action", null).show()
+            else
                 binding.webView.loadUrl(urlToSearch)
-                Snackbar.make(it, "WebView is loading", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-            } else {
-                Snackbar.make(it, "Invalid url", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-            }
-
-
 
         }
         // ------------------------

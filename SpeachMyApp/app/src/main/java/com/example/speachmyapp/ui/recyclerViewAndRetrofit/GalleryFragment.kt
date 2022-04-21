@@ -4,11 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.URLUtil
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.speachmyapp.databinding.FragmentGalleryBinding
 import com.example.speachmyapp.ui.network.API
 import com.example.speachmyapp.ui.network.RetrofitBuilder
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import retrofit2.Response
@@ -60,6 +62,7 @@ class GalleryFragment : Fragment() {
 
 
     private suspend fun loadCatFact() :  CatFact {
+        Snackbar.make(requireView(), "Please wait until query is over or try a new", Snackbar.LENGTH_LONG).setAction("Action", null).show()
         var requestNewCatFact : Response<CatFact> = apiService.getFact()
         var answer: CatFact = requestNewCatFact.body()!!
         return answer
