@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/view_card"
-        android:layout_width="380dp"
-        android:layout_height="46dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
         app:cardCornerRadius="8dp">
 
         <TextView
@@ -20,7 +21,8 @@
             android:layout_marginHorizontal="20px"
             android:fontFamily="monospace"
             android:lineSpacingExtra="8sp"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            />
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>

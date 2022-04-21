@@ -1,12 +1,13 @@
-package com.example.speachmyapp.ui.gallery
+package com.example.speachmyapp.ui.recyclerViewAndRetrofit
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.speachmyapp.databinding.CardCellBinding
 
-class CardAdaptater(
-    private val catFactsList: List<CatFact>
+class CardAdapter(val c: Context,
+                  val catFactsList: List<CatFact>
     ) : RecyclerView.Adapter<CardViewHolder>()
 {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder {

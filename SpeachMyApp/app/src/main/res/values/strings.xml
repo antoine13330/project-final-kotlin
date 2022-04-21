@@ -6,7 +6,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
+    <string name="menu_gallery">Recycler view and Retrofit</string>
     <string name="menu_slideshow">Chip rating</string>
     <string name="menu_SMTP">SMTP</string>
     <string name="menu_recycler_view">Recycler view</string>
@@ -26,11 +26,13 @@
     <string name="button_send">Send message</string>
     <string name="button_add">Add</string>
     <string name="button_load_url">Load url</string>
+    <string name="button_add_cat_fact">New cat fact</string>
     <!-- button -->
 
     <!-- info -->
     <string name="info_rating_chipgroup">Add rating chip + touch it to delete</string>
     <string name="info_home">Please choose a link from drawer</string>
+    <string name="info_welcome_drawer">Welcome, please choose a link</string>
     <!-- info -->
 
 
