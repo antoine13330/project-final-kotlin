@@ -30,14 +30,14 @@
 
     <!-- info -->
     <string name="info_rating_chipgroup">Add rating chip + touch it to delete</string>
+    <string name="info_home">Please choose a link from drawer</string>
     <!-- info -->
 
 
     <!-- direction -->
     <string name="direction_recycler">Recycler</string>
-    <string name="direction_gallery">gallery</string>
+    <string name="direction_gallery">Recycler view and get request</string>
     <string name="direction_slideshow">Slideshow</string>
-    <string name="direction_smtp">SMTP</string>
     <string name="direction_datetimepicker">DatePicker</string>
     <string name="direction_web_view">Web View</string>
     <!-- TODO: Remove or change this placeholder text -->

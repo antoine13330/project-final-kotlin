@@ -1,23 +1,17 @@
-package com.example.speachmyapp.ui.slideshow
+package com.example.speachmyapp.ui.chipRating
 
-import android.R
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.MediaController
-import android.widget.VideoView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.example.speachmyapp.BuildConfig
-import com.example.speachmyapp.databinding.FragmentSlideshowBinding
+import com.example.speachmyapp.databinding.FragmentChipRatingBinding
 import com.google.android.material.chip.Chip
 
 
-class SlideshowFragment : Fragment() {
+class ChipRatingFragment : Fragment() {
 
-    private var _binding: FragmentSlideshowBinding? = null
+    private var _binding: FragmentChipRatingBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -28,10 +22,8 @@ class SlideshowFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val slideshowViewModel =
-            ViewModelProvider(this).get(SlideshowViewModel::class.java)
 
-        _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+        _binding = FragmentChipRatingBinding.inflate(inflater, container, false)
         val root: View = binding.root
         binding.compButtonAdd.setOnClickListener {
             addChip()

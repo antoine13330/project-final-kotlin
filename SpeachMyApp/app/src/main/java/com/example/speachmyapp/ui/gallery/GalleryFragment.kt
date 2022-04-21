@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.speachmyapp.databinding.FragmentGalleryBinding
 
 class GalleryFragment : Fragment() {
@@ -27,8 +28,11 @@ class GalleryFragment : Fragment() {
 
         _binding = FragmentGalleryBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-
+        addCatFacts()
+        binding.compRecyclerView.apply {
+            layoutManager = GridLayoutManager(context,1)
+            adapter = CardAdaptater(catFactList)
+        }
         return root
     }
 
@@ -36,4 +40,11 @@ class GalleryFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+
+    private fun addCatFacts(){
+        val fact1 = CatFact("Cat are always falling on there foot",36)
+        catFactList.add(fact1)
+    }
 }
+
