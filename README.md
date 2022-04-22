@@ -21,16 +21,22 @@ Welcome to our final kotlin project ( Second year of IT school )
   ```{"fact":"The life expectancy of cats has nearly doubled over the last fifty years.","length":73}```
 
   #### ChipRating
-    Chip rating dem, the user can add or remove by clicking on it star reviews <br />
-    ![Chip rating demo](https://media.giphy.com/media/2k8qJgL71pntebUHy1/giphy.gif)
-    <br />
+   Chip rating dem, the user can add or remove by clicking on it star reviews 
+   <br />
+   ![Chip rating demo](https://media.giphy.com/media/2k8qJgL71pntebUHy1/giphy.gif)
+   <br />
   #### Webview
-    Initially loaded on ynov.com website, user can enter a valid url in the plain text input, and load the webview with it
+   Initially loaded on ynov.com website, user can enter a valid url in the plain text input, and load the webview with it
+   <br />
+   ![WebView demo](https://media.giphy.com/media/pgUviSoc0N8tsswB7Z/giphy.gif)
     <br />
-    ![WebView demo](https://media.giphy.com/media/pgUviSoc0N8tsswB7Z/giphy.gif)
+    Invalid url case:
     <br />
+    ![image](https://user-images.githubusercontent.com/72339313/164705160-2f742e45-3a5a-41b1-be49-f6c2c9c2e68e.png)
+    
     
   #### Datepicker
+  
 -----
 ### Maintenability: 
 -----
