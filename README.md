@@ -50,8 +50,9 @@ Welcome to our final kotlin project ( Second year of IT school )
   
 -----
   ## Contributors 
- 
-
+  <a href="https://github.com/antoine13330">
+    <img width="20" alt="image" src="https://user-images.githubusercontent.com/72339313/165090611-0d68dc3f-eaa0-4fb9-a54c-806b2b89c6d4.png">
+  </a>
   
   
 
