@@ -10,7 +10,6 @@ Welcome to our final kotlin project ( Second year of IT school )
 
 -----
 ### Functionalities:
------
   #### HomePage
   We are asking the user to choose a link from the drawer. Drawer is opening and he can now choose where to go
   ![Homepage gif presentation](https://media.giphy.com/media/xcc3ZwYPDVyRh3CrdL/giphy.gif)
@@ -36,13 +35,23 @@ Welcome to our final kotlin project ( Second year of IT school )
     
     
   #### Datepicker
-  
+   Showing the selected date in text input: <br />
+   ![image](https://media.giphy.com/media/MRPym1zR3FmK4rz4WT/giphy.gif)
+   
 -----
 ### Maintenability: 
------
-  #### Change app colors 
-  #### Create a new fragment
+  #### Change app colors
+  src/main/res/values/colors.xml <br />
+  <img width="383" alt="image" src="https://user-images.githubusercontent.com/72339313/165087613-266dcb40-47ca-4b84-876c-d60940229fd2.png">
   #### Add new text
+  src/main/res/values/strings.xml <br />
+  ![image](https://user-images.githubusercontent.com/72339313/165088669-5b4825a3-2252-45e5-a283-78eac1b126ff.png)
+  
+  
+-----
+  ## Contributors 
+ 
+
   
   
 
